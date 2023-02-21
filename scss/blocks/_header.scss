@@ -1,0 +1,264 @@
+.site-header{
+    padding: 18px 0;
+    background-color: #EABF9F;
+}
+
+.site-header__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-header__menu{
+    width: 23px;
+    height: 10px;
+    background-image: url("../images/icons/hamburger-open.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+}
+
+.site-header__close{
+    width: 18px;
+    height: 18px;
+    background-image: url("../images/icons/hamburger-close.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+}
+
+.site-header__menu-wrapper{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    padding-top: 18px;
+    z-index: 1;
+    background-color: #EABF9F;
+}
+
+.site-header__menu-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 61px;
+}
+
+.site-header__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-header__item{
+    margin-bottom: 30px;
+    &:last-child{
+        margin-bottom: 45px;
+    }
+}
+
+.site-header__link{
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #01384D;
+    text-decoration: none;
+}
+
+.site-header__order{
+    padding-top: 16px;
+    padding-bottom: 14px;
+    padding-right: 30px;
+    padding-left: 31px;
+    font-family: 'Josefin Sans';
+    line-height: 16px;
+    color: #01384D;
+    background: #FFFFFF;
+    border: 2px solid #01384D;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.site-header__contact-wrapper{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 77px;
+    padding: 29px 0 ;
+    background: #E5E5E5;
+}
+
+.site-header__contact-link{
+    position: relative;
+    display: inline-block;
+    padding-left: 61px;
+    padding-right: 61px;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #01384D;
+    &::before{
+        position: absolute;
+        left: 30px;
+        width: 19px;
+        height: 19px;
+        background-image: url("../../images/icons/phone-icon.png");
+        content: '';
+    }
+}
+
+.show{
+    animation: opener 0.5s ease;
+    left: 0;
+}
+
+.close{
+    animation: closer 0.5s ease;
+    left: -100%;
+}
+
+.site-header__desktop{
+    display: none;
+}
+
+@keyframes opener {
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0;
+    }
+}
+
+@keyframes closer {
+    from{
+        left: 0;
+    }
+    to{
+        left: -100%;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 740px){
+    .site-header{
+        padding: 19px 0;
+    }
+    
+    .site-header__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .site-header__menu{
+        display: none;
+        width: 23px;
+        height: 10px;
+        background-image: url("../images/icons/hamburger-open.svg");
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .site-header__close{
+        display: none;
+        width: 18px;
+        height: 18px;
+        background-image: url("../images/icons/hamburger-close.svg");
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .site-header__menu-wrapper{
+        position: static;
+        top: 0;
+        left: 0%;
+        width: auto;
+        height: auto;
+        padding: 0 0;
+        padding-top: 0px;
+        background-color: #EABF9F;
+    }
+    
+    .site-header__menu-top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0px;
+    }
+    
+    .site-header__menu-top-logo{
+        display: none;
+    }
+    
+    .site-header__list{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .site-header__item{
+        margin-bottom: 0px;
+        margin-right: 50px;
+        &:last-child{
+            margin-bottom: 0px;
+            margin-right: 0;
+        }
+    }
+    
+    .site-header__link{
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #01384D;
+    }
+    
+    .site-header__order{
+        display: none;
+    }
+    .site-header__order-desktop{
+        display: inline-block;
+    }
+
+    .site-header__contact-wrapper{
+        display: none;
+    }
+
+    .site-header__desktop{
+        display: inline-block;
+        float: right;
+        margin-top: 14px;
+    }
+    
+    .site-header__contact-link{
+        position: relative;
+        display: inline-block;
+        padding-left: 61px;
+        padding-right: 35px;
+        font-family: 'Josefin Sans';
+        font-size: 18px;
+        line-height: 18px;
+        text-decoration: none;
+        color: #01384D;
+        &::before{
+            position: absolute;
+            left: 30px;
+            width: 19px;
+            height: 19px;
+            background-image: url("../../images/icons/phone-icon.png");
+            content: '';
+        }
+    }
+}

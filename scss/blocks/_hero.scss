@@ -1,0 +1,126 @@
+.hero {
+	background-color: #eabf9f;
+}
+
+.hero__carousel-title-wrapper {
+	width: 666px;
+	margin-bottom: 50px;
+}
+
+.hero-add{
+	justify-content: flex-start !important;
+	background-color: transparent !important;
+	text-align: left !important;
+}
+
+.hero__carousel-title {
+	font-family: 'Raleway';
+	font-weight: 800;
+	font-size: 90px;
+	line-height: 105px;
+	color: #01384d;
+}
+
+.carousel__categories {
+	position: relative;
+	display: inline-block;
+	padding: 13px 25px;
+	padding-right: 55px;
+	font-family: 'Raleway';
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #01384d;
+	background: #ffffff;
+	border: 2px solid #01384d;
+	border-radius: 5px;
+	text-decoration: none;
+	&::after {
+		position: absolute;
+		top: 16px;
+		width: 17px;
+		height: 10px;
+		margin-left: 15px;
+		background-image: url('../../images/icons/hero-arrow.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		content: '';
+	}
+}
+
+.hero__carousel-content {
+	width: 100%;
+	padding-bottom: 170px;
+	background-image: url('../../images/hero-bed.png');
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-size: 705px 380px;
+}
+
+@media screen and (max-width: 1330px){
+	.hero__container{
+		width: 99%;
+	}
+}
+
+@media screen and (max-width: 1032px){
+	.hero__carousel-content {
+		padding-bottom: 81px;
+		background-image: url('../../images/hero-bed.png');
+		background-repeat: no-repeat;
+		background-size: 589px;
+		// background-position-y: calc(50% + 20px);
+		background-position: bottom right;
+	}
+	
+	.hero__carousel-title{
+		font-size: 75px;
+	}
+}
+
+@media screen and (max-width: 932px){
+	.hero__carousel-content {
+		padding-bottom: 70px;
+		background-image: url('../../images/hero-bed.png');
+		background-repeat: no-repeat;
+		background-size: 489px;
+		// background-position-y: calc(50% + 20px);
+		background-position: center right;
+	}
+}
+
+@media screen and (max-width: 740px){
+	.hero__container{
+		width: 96%;
+	}
+	.hero__carousel-content {
+		padding-bottom: 380px;
+		background-image: url('../../images/hero-bed.png');
+		background-repeat: no-repeat;
+		background-size: 489px;
+		// background-position-y: calc(50% + 20px);
+		background-position: center right;
+	}
+	.hero__carousel-title{
+		font-family: 'Abril Fatface';
+		font-weight: 400;
+		font-size: 41px;
+		line-height: 55px;
+		color: #01384D;
+	}
+	.carousel__categories{
+		top: 291px;
+	}
+}
+
+@media screen and (max-width: 555px){
+	.hero__carousel-title{
+		font-size: 31px;
+	}
+}
+
+@media screen and (max-width: 431px){
+	.hero__carousel-title{
+		font-size: 22px;
+	}
+}

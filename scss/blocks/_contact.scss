@@ -1,0 +1,127 @@
+.contact {
+	padding-top: 70px;
+	padding-bottom: 63px;
+	padding-right: 20px;
+	padding-left: 20px;
+	background: #eabf9f;
+}
+
+.contact__wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact__content {
+	margin-bottom: 47px;
+}
+
+.contact__title {
+	margin: 0;
+	margin-bottom: 3px;
+	font-family: 'Josefin Sans';
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 24px;
+	color: #01384d;
+}
+
+.contact__desc {
+	font-family: 'Josefin Sans';
+	font-size: 11px;
+	line-height: 23px;
+	color: #01384d;
+}
+
+.contact__input {
+	margin-bottom: 20px;
+	padding: 16px 0;
+	padding-left: 86px;
+	width: 100%;
+	font-family: 'Josefin Sans';
+	font-size: 12px;
+	line-height: 12px;
+	color: #01384d;
+	border: none;
+	background: #ffffff;
+	border-radius: 5px;
+}
+
+.contact__input--code{
+	position: absolute;
+	display: inline-block;
+	font-family: 'Raleway';
+	padding: 12px 0;
+	padding-left: 40px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	color: #01384D;
+	&::after{
+		position: absolute;
+		top: 15px;
+		right: -15px;
+		width: 2px;
+		height: 12px;
+		opacity: 0.6;
+		border-right: 1px solid #01384D;
+		content: "";
+	}
+}
+
+.contact__button {
+	width: 100%;
+	padding: 13px 0;
+	font-family: 'Josefin Sans';
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 14px;
+	color: #ffffff;
+	text-align: center;
+	border: 1px solid transparent;
+	background: #01384d;
+	border-radius: 5px;
+}
+
+@media screen and (min-width: 1100px) {
+	.contact__wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+	.contact__form {
+		display: flex;
+		align-items: center;
+	}
+	
+	.contact__input {
+		width: 420px;
+		margin-bottom: 0;
+	}
+	
+	.contact__button {
+		width: 240px;
+		margin-left: 15px;
+	}
+	
+	.contact__content {
+		margin-bottom: 0;
+	}
+	
+	.contact__title {
+		font-family: 'Raleway';
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 42px;
+		color: #01384d;
+	}
+	
+	.contact__desc {
+		font-family: 'Raleway';
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 23px;
+		color: #01384d;
+	}
+}

@@ -1,0 +1,170 @@
+.about{
+    padding-top: 60px;
+    padding-bottom: 90px;
+}
+
+.about__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.about__item{
+    display: flex;
+    flex-direction: column;
+}
+
+.about__title{
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    color: #01384D;
+}
+
+.about__description{
+    margin-bottom: 20px;
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    line-height: 26px;
+    color: #01384D;
+}
+
+.about__sublist{
+    width: 100%;
+    margin-bottom: 30px;
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    padding-left: 41px;
+    background: #EABF9F;
+    border: 2px solid #01384D;
+    border-radius: 8px;
+    list-style: none;
+}
+
+.about__subitem{
+    margin-bottom: 10px;
+    font-family: 'Josefin Sans';
+    line-height: 22px;
+    color: #01384D;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.about__image{
+    width: 100%;
+}
+
+.about__bottom__desc{
+    margin-bottom: 30px;
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    line-height: 26px;
+    color: #01384D;
+}
+
+.about__item__bottom{
+    margin-top: 30px;
+}
+
+.about__bottom__next-desc{
+    margin-bottom: 30px;
+    font-family: 'Josefin Sans';
+    line-height: 26px;
+    color: #01384D;
+}
+
+.stop-video{
+    display: none;
+    position: absolute;
+    right: 121px;
+    width: 40px;
+    height: 40px;
+}
+
+.about__video{
+    display: none;
+    position: relative;
+}
+
+@media screen and (min-width: 840px){
+    .about__item{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .about__item__bottom{
+        flex-direction: row-reverse;
+    }
+    
+    .about__subwrapper{
+        width: 50%;
+    }    
+    .about__image{
+        width: 350px;
+        height: 401px;
+    }
+
+}
+
+@media screen and (min-width: 1120px){
+    .about__title-wrapper{
+        width: 500px;
+    }
+    
+    .about__title{
+        margin-bottom: 28px;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 64px;
+    }
+    
+    .about__description{
+        margin-bottom: 20px;
+        font-family: 'Raleway';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 26px;
+        color: #01384D;
+    }
+    
+    .about__image{
+        width: 50%;
+        margin-left: 46px;
+    }
+    
+    .about__item__bottom{
+        margin-top: 80px;
+    }
+
+
+    
+    .about__bottom__desc{
+        margin: 0;
+        margin-bottom: 20px;
+        font-family: 'Raleway';
+        font-weight: 600;
+        line-height: 26px;
+        color: #01384D;
+    }
+    
+    .about__bottom__next-desc{
+        margin-top: 30px;
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #01384D;
+    }
+
+    .about__bottom-image{
+        margin-left: 0;
+        margin-right: 46px;
+    }
+}

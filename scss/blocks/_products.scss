@@ -1,0 +1,390 @@
+.products__new{
+    display: none !important;
+    left: 355px !important;
+    background-color: #1FCA25 !important;
+}
+
+.products__new--active{
+    display: block !important;
+}
+
+.products__title{
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+    color: #01384D;
+}
+
+.products__list{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 25px;
+    overflow-y: scroll;
+    list-style: none;
+}
+
+.products__item{
+    margin-right: 40px;
+    padding: 13px 31px;
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    text-align: center;
+    color: #01384D;
+    cursor: pointer;
+    &:last-child{
+        margin: 0;
+    }
+}
+
+.products__item--active{
+    background: #E6EBED;
+    border-radius: 5px;
+}
+
+.products__render__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+.products__render__item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 35px;
+    padding-left: 20px;
+    background: #F6FBFF;
+    border: 1px solid #C7DFF5;
+}
+
+.products__render__left{
+    width: 100%;
+    margin: 40px 0;
+}
+
+.products__render__right{
+    width: 100%;
+}
+
+.products__render__left  img{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.products__render__title{
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    color: #01384D;
+}
+
+.products__render__title-desktop{
+    display: none;
+}
+
+.products__render__sublist{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.products__render__subitem{
+    width: 50%;
+    
+    &:nth-child(2), &:last-child{
+        padding-left: 40px;
+    }
+    &:first-child{
+        margin-bottom: 33px;
+    }
+}
+
+.products__render__subtitle{
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: 'Josefin Sans';
+    font-size: 14px;
+    line-height: 14px;
+    color: #01384D;
+    opacity: 0.6;
+}
+
+.products__render__value{
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 26px;
+    color: #01384D;
+}
+
+.products__render__description-wrapper{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.products__render__description{
+    font-family: 'Josefin Sans';
+    font-size: 14px;
+    line-height: 23px;
+    color: #01384D;
+    opacity: 0.6;
+}
+
+.products__render__cost-title{
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: 'Josefin Sans';
+    color: #01384D;
+    opacity: 0.6;
+}
+
+.products__render__cost{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: #01384D;
+    & > span{
+        font-size: 16px;
+    }
+}
+
+.products__render__cost-wrapper{
+    margin-bottom: 30px;
+}
+
+.products__render__order{
+    position: relative;
+    padding-top: 16px;
+    padding-right: 58px;
+    padding-bottom: 14px;
+    padding-left: 23px;
+    font-family: 'Josefin Sans';
+    color: #01384D;
+    background: #FFFFFF;
+    border: 2px solid #01384D;
+    border-radius: 5px;
+    &::after{
+        position: absolute;
+        top: 15px;
+        right: 21px;
+        width: 20px;
+        height: 20px;
+        background-image: url("../../images/icons/shopping_cart.svg");
+        background-repeat: no-repeat;
+        content: "";
+    }
+}
+
+.products__badge{
+    display: inline-block;
+    position: absolute;
+    padding: 10px 30px;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #FF6B6B;
+    border-radius: 5px;
+}
+
+.products__render__discount{
+    font-family: 'Raleway';
+    margin-right: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration-line: line-through;
+    color: #FF5D5D;
+    opacity: 0.8;
+    & > span{
+        margin-left: 5px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
+
+
+@media screen and (min-width: 740px){
+    .products__title{
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 59px;
+        text-align: center;
+    }
+    
+    .products__render__item{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-left: 0px;
+        padding-top: 26px;
+        padding-right: 40px;
+        padding-bottom: 30px;
+        padding-left: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .products__render__left{
+        width: 50%;
+        margin: 0px 0;
+    }
+    
+    .products__render__right{
+        width: 50%;
+    }
+    
+    .products__render__left  img{
+        width: 80%;
+        height: 80% !important;
+        margin: 0;
+        padding-top: 122px;
+    }
+    
+    .products__render__title{
+        display: none;
+    }
+    
+    .products__render__title-desktop{
+        display: block;
+        margin: 0;
+        margin-bottom: 30px;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        color: #01384D;
+    }
+    
+    .products__render__sublist{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .products__render__subitem{
+        width: auto;
+        &:nth-child(2), &:last-child{
+            padding-left: 0px;
+        }
+        &:first-child{
+            margin-bottom: 23px;
+        }
+    }
+    
+    .products__render__subtitle{
+        margin: 0;
+        margin-bottom: 10px;
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #01384D;
+        opacity: 0.6;
+    }
+    
+    .products__render__value{
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    
+    .products__render__description-wrapper{
+        margin-top: 0px;
+        margin-bottom: 25px;
+    }
+    
+    .products__render__description{
+        font-family: 'Open Sans';
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        color: #000000;
+        opacity: 0.6;
+    }
+    
+    .products__render__cost-title{
+        margin: 0;
+        margin-bottom: 10px;
+        font-family: 'Josefin Sans';
+        color: #01384D;
+        opacity: 0.6;
+    }
+    
+    .products__render__cost{
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        color: #01384D;
+        & > span{
+            font-size: 16px;
+        }
+    }
+    
+    .products__render__cost-wrapper{
+        margin-bottom: 30px;
+    }
+    
+    .products__render__order{
+        position: relative;
+        padding-top: 16px;
+        padding-right: 58px;
+        padding-bottom: 14px;
+        padding-left: 23px;
+        font-family: 'Josefin Sans';
+        color: #01384D;
+        background: #FFFFFF;
+        border: 2px solid #01384D;
+        border-radius: 5px;
+        &::after{
+            position: absolute;
+            top: 15px;
+            right: 21px;
+            width: 20px;
+            height: 20px;
+            background-image: url("../../images/icons/shopping_cart.svg");
+            background-repeat: no-repeat;
+            content: "";
+        }
+    }
+}
+
+@media screen and (min-width: 850px){
+    .products__list{
+        overflow-y: auto;
+    }
+    .products__item{
+        font-family: 'Raleway';
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 472px){
+    .products__new--active{
+        display: none !important;
+    }
+}
